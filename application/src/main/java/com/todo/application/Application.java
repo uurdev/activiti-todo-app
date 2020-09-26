@@ -18,7 +18,12 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-
+  /*
+        first project created processEngineConfiguration function changed -
+        config.setDatabaseSchemaUpdate("true"); ->
+        created db schema and default changed
+         config.setDatabaseSchemaUpdate("none");
+     */
 
     @Bean
     public SpringProcessEngineConfiguration processEngineConfiguration() {
@@ -46,7 +51,7 @@ public class Application {
 
     @Bean
     public DataSource databaseConnection() {
-        return DataSourceBuilder.create().url("jdbc:postgresql://localhost:5432/todo-db").username("postgres")
+        return DataSourceBuilder.create().url("jdbc:postgresql://localhost:5432/todo-app").username("postgres")
                 .password("postgres").driverClassName("org.postgresql.Driver").build();
     }
 
