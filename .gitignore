@@ -1,0 +1,9 @@
+
+*.cmd
+*.jar
+application/.mvn/wrapper/maven-wrapper.properties
+application/.mvn/wrapper/maven-wrapper.jar
+application/.mvn/wrapper/MavenWrapperDownloader.java
+application/.mvn/wrapper/maven-wrapper.jar
+application/mvnw
+application/.mvn/wrapper/maven-wrapper.jar
